@@ -1,0 +1,461 @@
+{
+  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "phones": [
+    {
+      "id": 1,
+      "name": "iPhone 11",
+      "color": "Kırmızı",
+      "brand": "Apple",
+      "price": 11000
+    },
+    {
+      "id": 2,
+      "name": "iPhone 11",
+      "color": "Siyah",
+      "brand": "Apple",
+      "price": 11000
+    },
+    {
+      "id": 3,
+      "name": "iPhone 11",
+      "color": "Sarı",
+      "brand": "Apple",
+      "price": 11000
+    },
+    {
+      "id": 4,
+      "name": "iPhone 11",
+      "color": "Beyaz",
+      "brand": "Apple",
+      "price": 11000
+    },
+    {
+      "id": 5,
+      "name": "iPhone 11",
+      "color": "Mavi",
+      "brand": "Apple",
+      "price": 11000
+    },
+    {
+      "id": 6,
+      "name": "iPhone 11 Pro",
+      "color": "Kırmızı",
+      "brand": "Apple",
+      "price": 11400
+    },
+    {
+      "id": 7,
+      "name": "iPhone 11 Pro",
+      "color": "Siyah",
+      "brand": "Apple",
+      "price": 11400
+    },
+    {
+      "id": 8,
+      "name": "iPhone 11 Pro",
+      "color": "Sarı",
+      "brand": "Apple",
+      "price": 11400
+    },
+    {
+      "id": 9,
+      "name": "iPhone 11 Pro",
+      "color": "Beyaz",
+      "brand": "Apple",
+      "price": 11400
+    },
+    {
+      "id": 10,
+      "name": "iPhone 11 Pro",
+      "color": "Mavi",
+      "brand": "Apple",
+      "price": 11400
+    },
+    {
+      "id": 11,
+      "name": "iPhone 11 Pro Max",
+      "color": "Kırmızı",
+      "brand": "Apple",
+      "price": 11800
+    },
+    {
+      "id": 12,
+      "name": "iPhone 11 Pro Max",
+      "color": "Siyah",
+      "brand": "Apple",
+      "price": 11800
+    },
+    {
+      "id": 13,
+      "name": "iPhone 11 Pro Max",
+      "color": "Sarı",
+      "brand": "Apple",
+      "price": 11800
+    },
+    {
+      "id": 14,
+      "name": "iPhone 11 Pro Max",
+      "color": "Beyaz",
+      "brand": "Apple",
+      "price": 11800
+    },
+    {
+      "id": 15,
+      "name": "iPhone 11 Pro Max",
+      "color": "Mavi",
+      "brand": "Apple",
+      "price": 11800
+    },
+    {
+      "id": 16,
+      "name": "iPhone 12",
+      "color": "Kırmızı",
+      "brand": "Apple",
+      "price": 12000
+    },
+    {
+      "id": 17,
+      "name": "iPhone 12",
+      "color": "Siyah",
+      "brand": "Apple",
+      "price": 12000
+    },
+    {
+      "id": 18,
+      "name": "iPhone 12",
+      "color": "Sarı",
+      "brand": "Apple",
+      "price": 12000
+    },
+    {
+      "id": 19,
+      "name": "iPhone 12",
+      "color": "Beyaz",
+      "brand": "Apple",
+      "price": 12000
+    },
+    {
+      "id": 20,
+      "name": "iPhone 12",
+      "color": "Mavi",
+      "brand": "Apple",
+      "price": 12000
+    },
+    {
+      "id": 21,
+      "name": "iPhone 12 Pro",
+      "color": "Kırmızı",
+      "brand": "Apple",
+      "price": 12500
+    },
+    {
+      "id": 22,
+      "name": "iPhone 12 Pro",
+      "color": "Siyah",
+      "brand": "Apple",
+      "price": 12500
+    },
+    {
+      "id": 23,
+      "name": "iPhone 12 Pro",
+      "color": "Sarı",
+      "brand": "Apple",
+      "price": 12500
+    },
+    {
+      "id": 24,
+      "name": "iPhone 12 Pro",
+      "color": "Beyaz",
+      "brand": "Apple",
+      "price": 12500
+    },
+    {
+      "id": 25,
+      "name": "iPhone 12 Pro",
+      "color": "Mavi",
+      "brand": "Apple",
+      "price": 12500
+    },
+    {
+      "id": 26,
+      "name": "iPhone 12 Pro Max",
+      "color": "Kırmızı",
+      "brand": "Apple",
+      "price": 12750
+    },
+    {
+      "id": 27,
+      "name": "iPhone 12 Pro Max",
+      "color": "Siyah",
+      "brand": "Apple",
+      "price": 12750
+    },
+    {
+      "id": 28,
+      "name": "iPhone 12 Pro Max",
+      "color": "Sarı",
+      "brand": "Apple",
+      "price": 12750
+    },
+    {
+      "id": 29,
+      "name": "iPhone 12 Pro Max",
+      "color": "Beyaz",
+      "brand": "Apple",
+      "price": 12750
+    },
+    {
+      "id": 30,
+      "name": "iPhone 12 Pro Max",
+      "color": "Mavi",
+      "brand": "Apple",
+      "price": 12750
+    },
+    {
+      "id": 31,
+      "name": "iPhone 13",
+      "color": "Kırmızı",
+      "brand": "Apple",
+      "price": 13000
+    },
+    {
+      "id": 32,
+      "name": "iPhone 13",
+      "color": "Siyah",
+      "brand": "Apple",
+      "price": 13000
+    },
+    {
+      "id": 33,
+      "name": "iPhone 13",
+      "color": "Sarı",
+      "brand": "Apple",
+      "price": 13000
+    },
+    {
+      "id": 34,
+      "name": "iPhone 13",
+      "color": "Beyaz",
+      "brand": "Apple",
+      "price": 13000
+    },
+    {
+      "id": 35,
+      "name": "iPhone 13",
+      "color": "Mavi",
+      "brand": "Apple",
+      "price": 13000
+    },
+    {
+      "id": 36,
+      "name": "iPhone 13 Pro",
+      "color": "Kırmızı",
+      "brand": "Apple",
+      "price": 13800
+    },
+    {
+      "id": 37,
+      "name": "iPhone 13 Pro",
+      "color": "Siyah",
+      "brand": "Apple",
+      "price": 13800
+    },
+    {
+      "id": 38,
+      "name": "iPhone 13 Pro",
+      "color": "Sarı",
+      "brand": "Apple",
+      "price": 13800
+    },
+    {
+      "id": 39,
+      "name": "iPhone 13 Pro",
+      "color": "Beyaz",
+      "brand": "Apple",
+      "price": 13800
+    },
+    {
+      "id": 40,
+      "name": "iPhone 13 Pro",
+      "color": "Mavi",
+      "brand": "Apple",
+      "price": 13800
+    },
+    {
+      "id": 41,
+      "name": "iPhone 13 Pro Max",
+      "color": "Kırmızı",
+      "brand": "Apple",
+      "price": 15000
+    },
+    {
+      "id": 42,
+      "name": "iPhone 13 Pro Max",
+      "color": "Siyah",
+      "brand": "Apple",
+      "price": 15000
+    },
+    {
+      "id": 43,
+      "name": "iPhone 13 Pro Max",
+      "color": "Sarı",
+      "brand": "Apple",
+      "price": 15000
+    },
+    {
+      "id": 44,
+      "name": "iPhone 13 Pro Max",
+      "color": "Beyaz",
+      "brand": "Apple",
+      "price": 15000
+    },
+    {
+      "id": 45,
+      "name": "iPhone 13 Pro Max",
+      "color": "Mavi",
+      "brand": "Apple",
+      "price": 15000
+    },
+    {
+      "id": 46,
+      "name": "Samsung S20",
+      "color": "Kırmızı",
+      "brand": "Samsung",
+      "price": 14500
+    },
+    {
+      "id": 47,
+      "name": "Samsung S20",
+      "color": "Siyah",
+      "brand": "Samsung",
+      "price": 14500
+    },
+    {
+      "id": 48,
+      "name": "Samsung S20",
+      "color": "Sarı",
+      "brand": "Samsung",
+      "price": 14500
+    },
+    {
+      "id": 49,
+      "name": "Samsung S20",
+      "color": "Beyaz",
+      "brand": "Samsung",
+      "price": 14500
+    },
+    {
+      "id": 50,
+      "name": "Samsung S20",
+      "color": "Mavi",
+      "brand": "Samsung",
+      "price": 14500
+    },
+    {
+      "id": 51,
+      "name": "Samsung S20 Ultra",
+      "color": "Kırmızı",
+      "brand": "Samsung",
+      "price": 16000
+    },
+    {
+      "id": 52,
+      "name": "Samsung S20 Ultra",
+      "color": "Siyah",
+      "brand": "Samsung",
+      "price": 16000
+    },
+    {
+      "id": 53,
+      "name": "Samsung S20 Ultra",
+      "color": "Sarı",
+      "brand": "Samsung",
+      "price": 16000
+    },
+    {
+      "id": 54,
+      "name": "Samsung S20 Ultra",
+      "color": "Beyaz",
+      "brand": "Samsung",
+      "price": 16000
+    },
+    {
+      "id": 55,
+      "name": "Samsung S20 Ultra",
+      "color": "Mavi",
+      "brand": "Samsung",
+      "price": 16000
+    },
+    {
+      "id": 56,
+      "name": "Xiaomi Note10",
+      "color": "Kırmızı",
+      "brand": "Xiaomi",
+      "price": 7000
+    },
+    {
+      "id": 57,
+      "name": "Xiaomi Note10",
+      "color": "Siyah",
+      "brand": "Xiaomi",
+      "price": 7000
+    },
+    {
+      "id": 58,
+      "name": "Xiaomi Note10",
+      "color": "Sarı",
+      "brand": "Xiaomi",
+      "price": 7000
+    },
+    {
+      "id": 59,
+      "name": "Xiaomi Note10",
+      "color": "Beyaz",
+      "brand": "Xiaomi",
+      "price": 7000
+    },
+    {
+      "id": 60,
+      "name": "Xiaomi Note10",
+      "color": "Mavi",
+      "brand": "Xiaomi",
+      "price": 7000
+    },
+    {
+      "id": 61,
+      "name": "Xiaomi Note10 Lite",
+      "color": "Kırmızı",
+      "brand": "Xiaomi",
+      "price": 6000
+    },
+    {
+      "id": 62,
+      "name": "Xiaomi Note10 Lite",
+      "color": "Siyah",
+      "brand": "Xiaomi",
+      "price": 6000
+    },
+    {
+      "id": 63,
+      "name": "Xiaomi Note10 Lite",
+      "color": "Sarı",
+      "brand": "Xiaomi",
+      "price": 6000
+    },
+    {
+      "id": 64,
+      "name": "Xiaomi Note10 Lite",
+      "color": "Beyaz",
+      "brand": "Xiaomi",
+      "price": 6000
+    },
+    {
+      "id": 65,
+      "name": "Xiaomi Note10 Lite",
+      "color": "Mavi",
+      "brand": "Xiaomi",
+      "price": 6000
+    }
+  ]
+}

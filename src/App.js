@@ -1,25 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import "./App.scss";
+import Header from "./components/Header";
+import SearchFilters from "./components/SearchFilters";
+import SearchHeader from "./components/SearchHeader";
+import SearchResults from "./components/SearchResults";
 
-function App() {
+export default function App() {
+  const [inputVal, setInputVal] = useState("");
+  const [brands, setBrands] = useState([]);
+  const [colors, setColors] = useState([]);
+  const [colorFilterVal, setColorFilterVal] = useState();
+  const [brandFilterVal, setBrandFilterVal] = useState();
+  const [sortValue, setSortValue] = useState();
+  const [storageData, setStorageData] = useState();
+
+  useEffect(() => {
+    setStorageData(JSON.parse(localStorage.getItem("basket")));
+  }, []);
+
+  const sortOptions = [
+    { label: "En Düşük Fiyat", value: "lowestPrice" },
+    { label: "En Yüksek Fiyat", value: "highestPrice" },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header
+        inputVal={inputVal}
+        setInputVal={setInputVal}
+        storageData={storageData}
+        setStorageData={setStorageData}
+      />
+      <hr />
+      <SearchHeader
+        inputVal={inputVal}
+        sortOptions={sortOptions}
+        sortValue={sortValue}
+        setSortValue={setSortValue}
+      />
+      <div className="search__content-wrapper">
+        <SearchFilters
+          brands={brands}
+          colors={colors}
+          sortOptions={sortOptions}
+          colorFilterVal={colorFilterVal}
+          brandFilterVal={brandFilterVal}
+          sortValue={sortValue}
+          setColorFilterVal={setColorFilterVal}
+          setBrandFilterVal={setBrandFilterVal}
+          setSortValue={setSortValue}
+        />
+        <SearchResults
+          inputVal={inputVal}
+          setBrands={setBrands}
+          setColors={setColors}
+          setSortValue={setSortValue}
+          colorFilterVal={colorFilterVal}
+          brandFilterVal={brandFilterVal}
+          sortValue={sortValue}
+          storageData={storageData}
+          setStorageData={setStorageData}
+        />
+      </div>
     </div>
   );
 }
-
-export default App;
