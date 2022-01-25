@@ -21,6 +21,8 @@ export default function App() {
   const sortOptions = [
     { label: "En Düşük Fiyat", value: "lowestPrice" },
     { label: "En Yüksek Fiyat", value: "highestPrice" },
+    { label: "En Yeniler (A-Z)", value: "newestAtoZ" },
+    { label: "En Yeniler (Z-A)", value: "newestZtoA" },
   ];
 
   return (

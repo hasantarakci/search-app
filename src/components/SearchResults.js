@@ -49,17 +49,29 @@ export default function SearchResults({
 
   useEffect(() => {
     if (sortValue && filteredSearchResults) {
+      let newArr;
       if (sortValue.value === "highestPrice") {
-        const newArr = [...filteredSearchResults].sort(
-          (a, b) => b.price - a.price
-        );
-        setFilteredSearchResults(newArr);
-      } else {
-        const newArr = [...filteredSearchResults].sort(
-          (a, b) => a.price - b.price
-        );
-        setFilteredSearchResults(newArr);
+        newArr = [...filteredSearchResults].sort((a, b) => b.price - a.price);
+      } else if (sortValue.value === "lowestPrice") {
+        newArr = [...filteredSearchResults].sort((a, b) => a.price - b.price);
+      } else if (sortValue.value === "newestAtoZ") {
+        newArr = [...filteredSearchResults].sort((a, b) => {
+          const nameA = a.name.toUpperCase();
+          const nameB = b.name.toUpperCase();
+          if (nameA < nameB) return -1;
+          if (nameA > nameB) return 1;
+          return 0;
+        });
+      } else if (sortValue.value === "newestZtoA") {
+        newArr = [...filteredSearchResults].sort((a, b) => {
+          const nameA = a.name.toUpperCase();
+          const nameB = b.name.toUpperCase();
+          if (nameA > nameB) return -1;
+          if (nameA < nameB) return 1;
+          return 0;
+        });
       }
+      setFilteredSearchResults(newArr);
     }
   }, [sortValue]);
 

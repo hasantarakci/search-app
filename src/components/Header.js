@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import logo from "../logo.svg";
+import Modal from "./Modal";
 
 export default function Header({
   inputVal,
@@ -9,14 +10,28 @@ export default function Header({
 }) {
   const inputPlaceholder = "25 milyondan fazla ürün içerisinde ara";
   const basketRef = useRef(null);
-  // const [inputVal, setInputVal] = useState("");
   const [popupVisible, setPopupVisible] = useState(false);
   const [activeClass, setActiveClass] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState();
+  const [modalVisible, setModalVisible] = useState(false);
 
   const handleDelete = (item) => {
     const basket = storageData.filter((elem) => elem.id !== item.id);
     setStorageData(basket);
     localStorage.setItem("basket", JSON.stringify(basket));
+  };
+
+  const onSubmit = () => {
+    if (selectedProduct) handleDelete(selectedProduct);
+    setModalVisible(false);
+    setSelectedProduct();
+    document.body.style.overflow = "auto";
+  };
+
+  const onCancel = () => {
+    setModalVisible(false);
+    setSelectedProduct();
+    document.body.style.overflow = "auto";
   };
 
   useEffect(() => {
@@ -36,10 +51,6 @@ export default function Header({
     if (popupVisible) setActiveClass(" active");
     else setActiveClass("");
   }, [popupVisible]);
-
-  useEffect(() => {
-    console.log("storageData123", storageData);
-  }, [storageData]);
 
   return (
     <div className="header">
@@ -76,7 +87,11 @@ export default function Header({
                       <p>{item.color}</p>
                     </p>
                     <button
-                      onClick={() => handleDelete(item)}
+                      onClick={() => {
+                        setSelectedProduct(item);
+                        setModalVisible(true);
+                        document.body.style.overflow = "hidden";
+                      }}
                       className="delete"
                     >
                       Kaldır
@@ -88,6 +103,7 @@ export default function Header({
           </div>
         )}
       </div>
+      {modalVisible && <Modal onSubmit={onSubmit} onCancel={onCancel} />}
     </div>
   );
 }

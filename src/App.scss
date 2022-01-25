@@ -261,4 +261,64 @@
       }
     }
   }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+
+    &__body {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 400px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+      z-index: 10;
+    }
+
+    &__header {
+      padding: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    &__content {
+      padding: 20px;
+    }
+
+    &__bottom {
+      margin-top: 10px;
+      text-align: end;
+
+      button {
+        width: 70px;
+        height: 26px;
+        border: none;
+        color: #ffffff;
+        background-color: #d65959;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+
+        &:first-child {
+          margin-right: 10px;
+          background-color: #90d659;
+        }
+      }
+    }
+
+    &__text {
+      font-size: 12px;
+      margin: 0;
+    }
+  }
 }
